@@ -1,6 +1,6 @@
 import numpy as np
 import pandas as pd
-from yfinance import *
+from .yfinance import *
 import matplotlib.pyplot as plt
 import keras
 from keras.models import load_model
