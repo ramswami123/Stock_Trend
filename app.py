@@ -1,6 +1,6 @@
 import numpy as np
 import pandas as pd
-from Stock_Trend.yfinance import yfinance as yf
+from "/.Stock_Trend.yfinance" import yfinance as yf
 #import cryptography
 import matplotlib.pyplot as plt
 import keras
