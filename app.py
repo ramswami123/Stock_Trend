@@ -1,7 +1,7 @@
 import numpy as np
 import pandas as pd
-import pandas_datareader as data
-#import yfinance as yf
+import pandas_datareader as pdr
+import yfinance as yf
 #import cryptography
 import matplotlib.pyplot as plt
 import keras
@@ -16,9 +16,14 @@ user_input = st.text_input('Stock Symbool')
 end_=st.text_input('TODAY DATE')
 
 start_='2010-01-01'
+def get_stock_data(symbol, start_date, end_date):
+    yf.pdr_override()
+    df = pdr.get_data_yahoo(symbol, start=start_date, end=end_date)
+    return df
+
 
 #tickerData = yf.Ticker(user_input)
-tickerDf = data.DataReader(user_input, start=start_, end=end_, data_source="yahoo")
+tickerDf = get_stock_data(user_input, start=start_, end=end_)
 tickerDf=tickerDf.reset_index()
 tickerDf=tickerDf.drop(['Date'],axis=1)
 
