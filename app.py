@@ -15,15 +15,10 @@ st.title('Stock Trend Prediction')
 user_input = st.text_input('Stock Symbool')
 end_=st.text_input('TODAY DATE')
 
-start_='2010-01-01'
-def get_stock_data(symbol, start_date, end_date):
-    yf.pdr_override()
-    df = pdr.get_data_yahoo(symbol, start=start_date, end=end_date)
-    return df
-
 
 #tickerData = yf.Ticker(user_input)
-tickerDf = get_stock_data(user_input, start_date=start_, end_date =end_)
+tickerData = yf.Ticker(user_input)
+tickerDf = tickerData.history(period='1d', start='2010-1-1', end=end_)
 tickerDf=tickerDf.reset_index()
 tickerDf=tickerDf.drop(['Date'],axis=1)
 
