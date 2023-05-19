@@ -1,6 +1,7 @@
 import numpy as np
 import pandas as pd
-import yfinance as yf
+import pandas_datareader as data
+#import yfinance as yf
 #import cryptography
 import matplotlib.pyplot as plt
 import keras
@@ -12,9 +13,12 @@ from sklearn.preprocessing import MinMaxScaler
 st.title('Stock Trend Prediction')
 
 user_input = st.text_input('Stock Symbool')
+end=st.text_input('TODAY DATE')
 
-tickerData = yf.Ticker(user_input)
-tickerDf = tickerData.history(period='1d', start='2010-1-1', end='2023-5-13')
+start='2010-01-01'
+
+#tickerData = yf.Ticker(user_input)
+tickerDf = data.DataReader(user_input,'yahoo',start,end)
 tickerDf=tickerDf.reset_index()
 tickerDf=tickerDf.drop(['Date'],axis=1)
 
