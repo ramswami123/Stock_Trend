@@ -4,7 +4,7 @@ import pandas_datareader as pdr
 import yfinance as yf
 #import cryptography
 import matplotlib.pyplot as plt
-import keras
+#import keras
 from keras.models import load_model
 import streamlit as st
 from sklearn.preprocessing import MinMaxScaler
