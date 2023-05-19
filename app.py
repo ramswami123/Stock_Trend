@@ -1,7 +1,7 @@
 import numpy as np
 import pandas as pd
-import yfinance as yf
-import cryptography
+from Stock_Trend.yfinance import yfinance as yf
+#import cryptography
 import matplotlib.pyplot as plt
 import keras
 from keras.models import load_model
