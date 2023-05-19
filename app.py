@@ -23,7 +23,7 @@ def get_stock_data(symbol, start_date, end_date):
 
 
 #tickerData = yf.Ticker(user_input)
-tickerDf = get_stock_data(user_input, start=start_, end=end_)
+tickerDf = get_stock_data(user_input, start_date=start_, end_date =end_)
 tickerDf=tickerDf.reset_index()
 tickerDf=tickerDf.drop(['Date'],axis=1)
 
