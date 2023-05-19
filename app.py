@@ -13,12 +13,12 @@ from sklearn.preprocessing import MinMaxScaler
 st.title('Stock Trend Prediction')
 
 user_input = st.text_input('Stock Symbool')
-end=st.text_input('TODAY DATE')
+end_=st.text_input('TODAY DATE')
 
-start='2010-01-01'
+start_='2010-01-01'
 
 #tickerData = yf.Ticker(user_input)
-tickerDf = data.DataReader(user_input,'yahoo',start,end)
+tickerDf = data.DataReader(user_input, start=start_, end=end_, data_source="yahoo")
 tickerDf=tickerDf.reset_index()
 tickerDf=tickerDf.drop(['Date'],axis=1)
 
