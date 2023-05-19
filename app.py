@@ -22,7 +22,7 @@ tickerDf = tickerData.history(period='1d', start='2010-1-1', end=end_)
 tickerDf=tickerDf.reset_index()
 tickerDf=tickerDf.drop(['Date'],axis=1)
 
-st.subheader('Data from 2010 to May 2023')
+st.subheader('Data from 2010 to Till Date')
 st.write(tickerDf.describe())
 
 #visualising the closing price
