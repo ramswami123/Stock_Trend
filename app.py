@@ -12,8 +12,8 @@ from sklearn.preprocessing import MinMaxScaler
 
 st.title('Stock Trend Prediction')
 
-user_input = st.text_input('Stock Symbool')
-end_=st.text_input('TODAY DATE')
+user_input = st.text_input('STOCK SYMBOL')
+end_=st.text_input('TODAY DATE (YYYY-MM-DD)')
 
 
 #tickerData = yf.Ticker(user_input)
