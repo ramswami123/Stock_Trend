@@ -6,9 +6,13 @@
 ## Technologies Used 👨🏽‍💻:
 
 1.Numpy
+
 2.Streamlit cloud
+
 3.Pandas
+
 4.Matplotlib
+
 5.Keras(Tensorflow)
 
 
@@ -21,7 +25,9 @@
 ## Installation 📦
 
 >pip install streamlit
+
 >pip install tensorflow
+
 >pip install Yfinance
 
 #### Clone
@@ -31,7 +37,9 @@
 #### Run server locally
 
 > Go to streamlit terminal 
+
 > streamlit run app.py
+
 > Go to localhost:8000
 
 
