@@ -4,11 +4,12 @@
 
 
 ## Technologies Used 👨🏽‍💻:
-1. Numpy
+
+1.Numpy
 2.Streamlit cloud
-3. Pandas
-4. Matplotlib
-5. Keras(Tensorflow)
+3.Pandas
+4.Matplotlib
+5.Keras(Tensorflow)
 
 
 ## Features 📋
@@ -20,8 +21,8 @@
 ## Installation 📦
 
 >pip install streamlit
->>pip install tensorflow
->>pip install Yfinance
+>pip install tensorflow
+>pip install Yfinance
 
 #### Clone
 
