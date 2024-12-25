@@ -1,10 +1,10 @@
-keras==2.12.0
-matplotlib==3.5.0
-numpy==1.23.5
-pandas==1.5.3
-pandas_datareader==0.10.0
-scikit_learn==1.1.1
-streamlit==1.0.0
-tensorflow==2.12.0
-yfinance==0.2.18
-protobuf == 3.20.0
+keras
+matplotlib
+numpy
+pandas
+pandas_datareader
+scikit_learn
+streamlit
+tensorflow
+yfinance
+protobuf
