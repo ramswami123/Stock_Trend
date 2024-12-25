@@ -7,4 +7,4 @@ scikit_learn==1.1.1
 streamlit==1.0.0
 tensorflow==2.12.0
 yfinance==0.2.18
-protoc == 3.19.0
+protobuf == 3.20.0
